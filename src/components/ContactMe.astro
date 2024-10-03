@@ -1,14 +1,44 @@
 ---
 import Form from "./Form.astro";
 ---
-<section class="bg-bg-dark">
-    <div class="px-4 py-16 text-white">
-        <h2 class="mb-10 text-4xl">Назначить встречу</h2>
 
-        <div class="grid">
-            <div class="flex flex-col gap-7">
-                <Form/>
-            </div>
-        </div>
+<section class="bg-bg-dark">
+  <div class="px-4 py-16 text-white max-w-[1200px] w-full mx-auto">
+    <h2 class="mb-10 text-4xl">Назначить встречу</h2>
+
+    <div class="grid">
+      <div class="flex flex-col gap-7">
+        <Form />
+      </div>
     </div>
+  </div>
+
+  <section class="bg-bg-light-beige">
+    <div class="px-4 py-16 max-w-[1200px] w-full mx-auto">
+      <h2 class="mb-10 text-center text-2xl">
+        Не знаете с чего начать? <br /> Помогу сформулировать запрос
+      </h2>
+      <p class="mb-4 text-center">
+        Если вам сложно сформулировать свой запрос – это нормально. Мы можем
+        прояснить его на первой консультации. Или напишите мне, используя любой
+        удобный для вас способ (E-mail, whatsApp, Telegram)
+      </p>
+
+      <p class="text-center mb-4">Консультации проводятся очно и онлайн. Работа ведется со взрослыми и подростками от 12 лет.</p>
+
+      <div class="flex justify-center flex-wrap gap-4">
+        <a>8(988)998-88-99</a>
+        <a>email@email.ru</a>
+        <a>WhatsApp</a>
+        <a>Telegram</a>
+      </div>
+    </div>
+  </section>
 </section>
+
+<style>
+  a {
+    text-decoration: underline;
+    color: #2e3617;
+  }
+</style>
