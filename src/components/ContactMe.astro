@@ -2,18 +2,39 @@
 import Form from "./Form.astro";
 ---
 
-<section class="bg-bg-dark">
-  <div class="px-4 py-16 text-white max-w-[1200px] w-full mx-auto">
+<section id="form" class="bg-bg-dark">
+  <div class="px-4 py-16 text-white max-w-[1024px] w-full mx-auto">
     <h2 class="mb-10 text-4xl">Назначить встречу</h2>
 
-    <div class="grid">
-      <div class="flex flex-col gap-7">
-        <Form />
+    <div class="grid md:grid-cols-2 md:gap-8">
+
+      <div class="hidden md:block">
+        <h2 class="mb-10 text-left text-2xl">
+          Не знаете с чего начать? <br /> Помогу сформулировать запрос
+        </h2>
+        <p class="mb-4 text-left">
+          Если вам сложно сформулировать свой запрос – это нормально. Мы можем
+          прояснить его на первой консультации. Или напишите мне, используя любой
+          удобный для вас способ (E-mail, whatsApp, Telegram)
+        </p>
+
+        <p class="text-left mb-4">Консультации проводятся очно и онлайн. <br/> Работа ведется со взрослыми и подростками от 12 лет.</p>
+
+        <div class="flex flex-col text-white flex-wrap gap-4">
+          <a class="md-link">8(988)998-88-99</a>
+          <a class="md-link">email@email.ru</a>
+          <a class="md-link">WhatsApp</a>
+          <a class="md-link">Telegram</a>
+        </div>
       </div>
+
+
+        <Form />
+
     </div>
   </div>
 
-  <section class="bg-bg-light-beige">
+  <section class="md:hidden bg-bg-light-beige">
     <div class="px-4 py-16 max-w-[1200px] w-full mx-auto">
       <h2 class="mb-10 text-center text-2xl">
         Не знаете с чего начать? <br /> Помогу сформулировать запрос
@@ -40,5 +61,11 @@ import Form from "./Form.astro";
   a {
     text-decoration: underline;
     color: #2e3617;
+  }
+
+  .md-link {
+    width: fit-content;
+    text-decoration: underline;
+    color: white;
   }
 </style>
