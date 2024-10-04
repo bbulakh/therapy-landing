@@ -11,7 +11,7 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="Психотерапевт Дина Четверикова" />
     <meta name="viewport" content="width=device-width" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,7 +25,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="w-full min-h-screen flex flex-col justify-between">
     <slot />
     <Footer />
   </body>
@@ -55,7 +55,11 @@ const { title } = Astro.props;
     font-family: 'neue-ralewe-regular';
   }
 
-  p, a {
+  header, nav > a {
+    font-family: 'neue-ralewe-regular';
+  }
+
+  p, a, li {
     font-family: "Noto Sans", sans-serif;
     font-weight: 300;
   }
