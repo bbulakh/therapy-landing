@@ -15,9 +15,33 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title}>
-  <h1>{post.data.title}</h1>
-  <p>{post.data.date}</p>
-  <div>
-    <Content />
-  </div>
+  <section class="mx-auto w-full max-w-[1024px] px-4 py-16">
+    <a
+        href="/blog"
+        class="flex items-center gap-2 text-bg-dark underline underline-offset-2"
+    >
+      <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-4"
+      >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+      </svg>
+
+      Блог</a
+    >
+
+    <h1 class="mb-10 mt-6 text-4xl">{post.data.title}</h1>
+    <div class="max-w-[600px]">
+      <img class="mb-10" src={post.data.img} alt="blog image">
+      <Content />
+    </div>
+
+  </section>
 </Layout>
