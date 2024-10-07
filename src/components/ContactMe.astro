@@ -1,65 +1,77 @@
 ---
-import Form from "./Form.astro";
+// import Form from "./Form.astro";
 ---
 
 <section id="form" class="bg-bg-dark">
-  <div class="mx-auto w-full max-w-[1024px] px-4 py-16 text-white">
-    <h2 class="mb-10 text-4xl">Назначить встречу</h2>
+  <div class="mx-auto flex flex-col justify-center w-full max-w-[1024px] px-4 py-16 text-white">
+
 
     <div class="grid md:grid-cols-2 md:gap-8">
-      <div class="hidden md:block">
-        <h2 class="mb-10 text-left text-2xl">
+      <div class="flex flex-col mb-10 flex-wrap justify-center gap-4">
+        <h2 class="mb-5 text-4xl">Назначить встречу</h2>
+        <p class="mb-5">
+          Свяжитесь со мной удобным для вас способом, и я помогу вам разобраться
+          в ваших вопросах и найти пути к решению.
+        </p>
+        <div class="flex flex-col gap-4">
+          <a
+              href="https://api.whatsapp.com/send?phone=79165878201"
+              class="md-link flex items-center justify-center gap-2 bg-bg-light-green px-6 py-4 text-bg-dark"
+          >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+            >
+              <path
+                  fill="currentColor"
+                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144l-2.494.654l.666-2.433l-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931a6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646c-.182-.065-.315-.099-.445.099c-.133.197-.513.646-.627.775c-.114.133-.232.148-.43.05c-.197-.1-.836-.308-1.592-.985c-.59-.525-.985-1.175-1.103-1.372c-.114-.198-.011-.304.088-.403c.087-.088.197-.232.296-.346c.1-.114.133-.198.198-.33c.065-.134.034-.248-.015-.347c-.05-.099-.445-1.076-.612-1.47c-.16-.389-.323-.335-.445-.34c-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654c0 .977.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992c.47.205.84.326 1.129.418c.475.152.904.129 1.246.08c.38-.058 1.171-.48 1.338-.943c.164-.464.164-.86.114-.943c-.049-.084-.182-.133-.38-.232"
+              ></path>
+            </svg>
+            Написать в WhatsApp</a
+          >
+          <a
+              href="https://t.me/dina_chetverikova"
+              class="md-link w-full flex items-center justify-center gap-2 bg-bg-light-green px-6 py-4 text-bg-dark"
+          >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+            >
+              <path
+                  fill="currentColor"
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906c-.778.324-2.334.994-4.666 2.01c-.378.15-.577.298-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294c.26.006.549-.1.868-.32c2.179-1.471 3.304-2.214 3.374-2.23c.05-.012.12-.026.166.016c.047.041.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817c-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088c.327.216.589.393.85.571c.284.194.568.387.936.629c.093.06.183.125.27.187c.331.236.63.448.997.414c.214-.02.435-.22.547-.82c.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315a.337.337 0 0 0-.114-.217a.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"
+              ></path>
+            </svg>
+            Написать в Telegram</a
+          >
+        </div>
+      </div>
+
+      <div>
+        <h2 class="mb-5 text-left text-2xl">
           Не знаете с чего начать? <br /> Помогу сформулировать запрос
         </h2>
         <p class="mb-4 text-left">
           Если вам сложно сформулировать свой запрос – это нормально. Мы можем
           прояснить его на первой консультации. Или напишите мне, используя
-          любой удобный для вас способ <br /> (E-mail, whatsApp, Telegram)
+          любой удобный для вас способ
         </p>
-
-
-        <div class="flex flex-col flex-wrap gap-4 text-white">
-          <a class="md-link">+7 (916) 587 82 01</a>
-          <a class="md-link">dinachetverikova@gmail.com</a>
-          <a class="md-link">WhatsApp</a>
-          <a class="md-link">Telegram</a>
-        </div>
       </div>
-
-      <Form />
     </div>
   </div>
-
-  <section class="bg-bg-light-beige md:hidden">
-    <div class="mx-auto w-full max-w-[1200px] px-4 py-16">
-      <h2 class="mb-10 text-center text-2xl">
-        Не знаете с чего начать? <br /> Помогу сформулировать запрос
-      </h2>
-      <p class="mb-4 text-center">
-        Если вам сложно сформулировать свой запрос – это нормально. Мы можем
-        прояснить его на первой консультации. Или напишите мне, используя любой
-        удобный для вас способ (E-mail, whatsApp, Telegram)
-      </p>
-
-      <div class="flex flex-wrap justify-center gap-4">
-        <a>+7 (916) 587 82 01</a>
-        <a>dinachetverikova@gmail.com</a>
-        <a>WhatsApp</a>
-        <a>Telegram</a>
-      </div>
-    </div>
-  </section>
 </section>
 
 <style>
   a {
-    text-decoration: underline;
     color: #2e3617;
+    font-weight: 400;
+    font-size: 19px;
   }
 
   .md-link {
-    width: fit-content;
-    text-decoration: underline;
-    color: white;
   }
 </style>
