@@ -36,17 +36,17 @@ import Layout from "../../layouts/Layout.astro";
         posts.map((post) => (
           <a
             href={`/blog/${post.slug}`}
-            class="flex max-w-[350px] flex-col bg-bg-light-green sm:max-w-none sm:flex-row sm:items-center sm:justify-center md:min-w-[700px] md:max-w-none lg:min-w-[500px]"
+            class="flex flex-col bg-bg-light-green sm:max-w-none sm:flex-row sm:items-center sm:justify-center md:min-w-[700px] md:max-w-none lg:min-w-[400px]"
           >
             <div class="w-full md:w-1/3">
               <img
-                class="aspect-square w-full object-cover sm:min-w-[300px] md:min-w-0 lg:min-h-[220px]"
+                class="aspect-square w-full object-cover sm:min-w-[300px] md:min-w-0 lg:min-h-[220px] lg:win-w-[220px]"
                 src={post.data.img}
                 alt="Blog Image"
               />
             </div>
 
-            <div class="flex min-h-[220px] flex-col p-6 sm:min-w-[320px] sm:justify-center md:w-9/12">
+            <div class="flex min-h-[220px] md:w-2/3 flex-col p-6 sm:min-w-[320px] sm:justify-center">
               <p class="text-xs">{post.data.date}</p>
               <h3 class="mb-4 truncate text-2xl">{post.data.title}</h3>
               <p />
