@@ -15,6 +15,7 @@ export default {
 			'bubble-gum': '#ff77e9',
 			'bermuda': '#78dcca',
 			'bg-dark': '#2e3617',
+			'text-gray': '#50514C',
 			'bg-light-green': '#f3f6ea',
 			'bg-light-beige': '#fcf9ef',
 		},
